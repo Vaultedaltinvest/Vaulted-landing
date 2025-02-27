@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaulted</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #101214, #1A1D2A);
+            color: #C0C0C0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .container {
+            max-width: 900px;
+        }
+        h1 {
+            font-size: 4em;
+            font-weight: 700;
+            color: #F5F5F5;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.75;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #C0C0C0;
+            color: #101214 !important;
+            padding: 18px 48px;
+            font-size: 1.3em;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0px 6px 15px rgba(192, 192, 192, 0.3);
+        }
+        .cta-button:hover {
+            background: #640D14;
+            color: #C0C0C0 !important;
+            border-color: #C0C0C0;
+            box-shadow: 0px 15px 30px rgba(155, 45, 48, 0.3);
+        }
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 60px;
+            max-width: 1100px;
+        }
+        .info-box {
+            width: 45%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0px 12px 24px rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .info-box:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+        .info-box h3 {
+            font-size: 1.8em;
+            color: #C0C0C0;
+            margin-bottom: 15px;
+        }
+        .info-box p {
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .info-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vaulted</h1>
+        <p>Your unfair advantage in alternative investing.</p>
+        <a href="#" class="cta-button">Get Early Access</a>
+    </div>
+    <div class="info-container">
+        <div class="info-box">
+            <h3>📊 Real-Time Market Data</h3>
+            <p>Track and analyze fine art and wine markets with live pricing and AI-driven insights.</p>
+        </div>
+        <div class="info-box">
+            <h3>🔎 AI-Powered Investment Tools</h3>
+            <p>Get predictive analytics and trend forecasting to make smarter investment decisions.</p>
+        </div>
+        <div class="info-box">
+            <h3>🏆 Exclusive Market Reports</h3>
+            <p>Gain access to curated investment reports on alternative assets from top analysts.</p>
+        </div>
+        <div class="info-box">
+            <h3>🔒 Secure & Verified Data</h3>
+            <p>Our data is sourced from verified institutions to ensure accuracy and transparency.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const infoBoxes = document.querySelectorAll(".info-box");
+            infoBoxes.forEach((box, index) => {
+                setTimeout(() => {
+                    box.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+                    box.style.opacity = "1";
+                    box.style.transform = "translateY(0)";
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
