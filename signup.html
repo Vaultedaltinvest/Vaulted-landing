@@ -1,91 +1,26 @@
-body {
-    background-color: #121212;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Vaulted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Get Early Access</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-.container {
-    text-align: center;
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #D4AF37; /* Gold Accent */
-}
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #ddd;
-}
-
-.form-container {
-    background-color: #1e1e1e;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(179, 0, 27, 0.5);
-    width: 400px;
-    margin-top: 20px;
-    border: 1px solid #b3001b;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    font-size: 1.1em;
-    margin-top: 10px;
-    align-self: flex-start;
-    color: #D4AF37; /* Gold Accent */
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #b3001b;
-    border-radius: 5px;
-    background-color: #2a2a2a;
-    color: white;
-    font-size: 1em;
-    transition: 0.3s;
-}
-
-input:focus {
-    outline: none;
-    border-color: #ff002f;
-    box-shadow: 0px 0px 8px rgba(255, 0, 47, 0.5);
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px;
-    width: 100%;
-    background-color: #b3001b;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0px 3px 10px rgba(255, 0, 47, 0.4);
-}
-
-button:hover {
-    background-color: #ff002f;
-    box-shadow: 0px 5px 15px rgba(255, 0, 47, 0.7);
-}
-
-button:active {
-    transform: scale(0.98);
-}
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
