@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #101214, #1A1D2A);
+    color: #C0C0C0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,16 +10,19 @@ body {
 }
 
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 24px rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
     width: 300px;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #F5F5F5;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 form {
@@ -28,7 +32,8 @@ form {
 
 label {
     margin-bottom: 8px;
-    color: #555;
+    color: #C0C0C0;
+    font-size: 1.1em;
 }
 
 input {
@@ -36,17 +41,26 @@ input {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #C0C0C0;
 }
 
 button {
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #C0C0C0;
+    color: #101214;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0px 6px 15px rgba(192, 192, 192, 0.3);
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #640D14;
+    color: #C0C0C0 !important;
+    border-color: #C0C0C0;
+    box-shadow: 0px 15px 30px rgba(155, 45, 48, 0.3);
 }
